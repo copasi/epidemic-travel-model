@@ -1,0 +1,37 @@
+<fulfillmentToken fulfillmentType="loan" auth="user" xmlns="http://ns.adobe.com/adept">
+  <distributor>urn:uuid:9cb786e8-586a-4950-8901-fff8d2ee6025</distributor>
+  <operatorURL>http://acs.ebookcentral.proquest.com/fulfillment</operatorURL>
+  <transaction>1181622_82745213</transaction>
+  <expiration>2018-01-02T09:09:34-08:00</expiration>
+  <resourceItemInfo>
+    <resource>urn:uuid:00000000-0000-0000-0000-000001181622</resource>
+    <resourceItem>0</resourceItem>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Nonlinear Dynamics and Chaos</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Strogatz, Steven H.; </dc:creator>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Westview Press</dc:publisher>
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">1181622</dc:identifier>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/pdf</dc:format>
+    </metadata>
+    <licenseToken>
+      <resource>urn:uuid:00000000-0000-0000-0000-000001181622</resource>
+      <permissions>
+        <display>
+          <duration>84776</duration>
+        </display>
+        <excerpt>
+          <duration>84776</duration>
+          <count initial="219" max="219" incrementInterval="387"/>
+        </excerpt>
+        <print>
+          <duration>84776</duration>
+          <count initial="438" max="438" incrementInterval="193"/>
+        </print>
+        <play>
+          <duration>84776</duration>
+        </play>
+      </permissions>
+    </licenseToken>
+  </resourceItemInfo>
+  <hmac>2rRF2dokIoyEkF1eBEaDTu8ddmQ=</hmac>
+</fulfillmentToken>

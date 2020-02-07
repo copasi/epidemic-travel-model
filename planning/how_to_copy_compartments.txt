@@ -1,0 +1,22 @@
+Stefan suggested the following strategy (which became obsolete for me,
+when CModelExpansion was exposed in the bindings)
+
+0 save reactions reactions
+
+1 copy compartment:
+  model.getCompartments.addCopy(source)
+
+2 rename compartment
+  model.getCompartments[source.ObjectName + "_1"]
+
+3 for each save reaction as r
+  1 copy reaction
+    model.getReactions.addCopy(r)
+  2 R = model.getReactions.[r + "_1")
+  3 Rename R to ...
+  4 scheme = r.getReactionScheme
+  5 replace source.ObjectName with compartment.ObjectName in scheme
+  6 R.setReactionScheme(scheme)
+
+repeat 1-3 as needed.
+
