@@ -1,2 +1,6 @@
 # epidemic-travel-model
 Example code to automatically generate epidemic patch model (SEIR, in this case) with commuter travel events.
+
+This started as project for a course taught by Dr. Yang Cao, at Virginia Tech. Xiangwen Wang was my (Brian Klahn's) partner for the project.
+
+COPASI's Python language bindings and model expansion functions are used to programatically take a single compartment COPASI (SEIR) model and create compartments for each state in the United States. Compartment sizes (areas) are based on land areas. People are represented as individual metabolite "particles", in different disease states (S-E-I-R). Thus each state represents a patch in a patch disease spread model. Interstate morning and evening commuter movement is simulated using COPASI events, which will add or remove people (particles, with their associated disease state) between the states. Each commute event uses dynamically calculated particle numbers, based on actual commuter flow data. An event, and expression for calculation, must be generated for each state to state flow event, and for both morning and evening. The "generating" folder contains the code for creating the exanded model, creating all the events, and programatically creating the plot instances in the COPASI model file.
